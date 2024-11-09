@@ -22,7 +22,7 @@ img{
 
 /* Parent box - main page*/
 .header { 
-    background-image: url(img/background.png);
+    background-image: url('../img/background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +78,7 @@ margin-left: 40px;
     width: 80px;
     height: 40px;
     margin-right: 40px;
-    background-image: url(img/hamburger-menu.png);
+    background-image: url('../img/hamburger-menu.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,7 +97,7 @@ margin-left: 40px;
 }
 
 .logo-main-page {
-    background-image: url(img/elektrikeelfestival.png);
+    background-image: url('../img/elektrikeelfestival.png');
     width: 355px;
     height: 264px;
     background-size: cover;
@@ -116,7 +116,7 @@ margin-left: 40px;
 .tickets-button{
 width: 200px;
 height: 50px;
-background-image: url(img/tickets-border.png);
+background-image: url('../img/tickets-border.png');
 background-repeat: no-repeat;
 background-position: center;
 background-size: contain;
@@ -154,7 +154,7 @@ transition: filter 0.3s ease, transform 0.3s ease;
     width: 100%;
     min-height: 650px;
     padding-top: 100px;
-    background: url(img/crowd.jpg);
+    background: url('../img/crowd.jpg');
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -332,7 +332,7 @@ position: absolute;
     width: 100%;
     min-height: 750px;
     padding-top: 0px;
-    background: url(img/background-dj.png);
+    background: url('../img/background-dj.png');
     background-position: 63% center;
     background-repeat: no-repeat;
     background-size: cover;
