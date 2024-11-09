@@ -1,0 +1,622 @@
+@font-face {
+font-family: 'Kare';
+src: url(/css/Non-commercial/WEB/Kare-Trial.woff);
+}
+
+
+/* h1{
+font-family: 'Kare', sans-serif;
+font-size: xx-large;
+color: rgb(255, 255, 255);
+} */
+
+* {margin: 0;}
+
+body {background-color: #272624;}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Parent box - main page*/
+.header { 
+    background-image: url(/img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to left, #1edde8, #8600ef);
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-menu{
+    width: 100%;
+    height: 130px;
+    /* background-color: coral; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-menu-logo-box{
+width: 100px;
+height: 70px;
+/* background-color: rgb(90, 90, 90); */
+margin-left: 40px;
+}
+
+.top-menu-logo{
+    font-family: 'Kare', sans-serif;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+}
+
+.top-menu-logo{
+    cursor: pointer;
+}
+
+
+.hamburger-menu{
+    width: 80px;
+    height: 40px;
+    margin-right: 40px;
+    background-image: url(/img/hamburger-menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.hamburger-menu:hover{
+    cursor: pointer;
+}
+
+.logo-main-page-box{
+    width: 100%;
+    height: 140px;
+    margin-top: 310px;
+    /* background-color: rgba(255, 230, 0, 0.692); */
+}
+
+.logo-main-page {
+    background-image: url(/img/elektrikeelfestival.png);
+    width: 355px;
+    height: 264px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.tickets-main-page-box{
+    width: 100%;
+    height: 50px;
+    margin-top: -10px;
+    /* position: relative; */
+        /* background-color: rgb(0, 255, 234); */
+}
+
+.tickets-button{
+width: 200px;
+height: 50px;
+background-image: url(/img/tickets-border.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+cursor: pointer;
+transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.tickets-button:hover{
+    filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.726));
+        transform: scale(1.10);
+}
+
+.play-button-box{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    /* background-color: rgb(0, 255, 234); */
+    
+}
+
+.play-button i{
+    font-size: 35px;
+    color: #61c2c8;
+    padding: 8px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.play-button i:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.second-page{
+    width: 100%;
+    min-height: 650px;
+    padding-top: 100px;
+    background: url(/img/crowd.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.second-page::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to left, #1edde8, #8600ef);
+}
+
+.show-box{
+    width: 100%;
+    height: 50px;
+    /* background-color: #0400ff;     */
+    
+}
+
+.show{
+    font-family: 'Kare', sans-serif;
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.719);
+}
+
+.city-box{
+    width: 100%;
+    height: 50px;
+    /* background-color: #61c2c8; */
+    margin-top: 70px;
+}
+
+.city{
+    width: 250px;
+    height: 70px;
+    background: linear-gradient(to left, #1edde8, #8600ef);
+    border-radius: 1000px;
+}
+
+.city:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.city-text{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.719);
+    letter-spacing: 6px;
+}
+
+.city-text .melb{
+    font-size: 25px;
+}
+
+.date-box {
+    width: 100%;
+    height: 70px;
+}
+
+.date-text {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: white; 
+    padding: 0 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.719);
+}
+
+.line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #ffffff; 
+    margin: 0 10px; 
+}
+
+.artist-page{
+    width: 100%;
+    min-height: 650px;
+    padding-top: 100px;
+    background: #272624;
+    position: relative;
+    overflow: hidden;
+}
+
+.artist-page::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to left, #1edde8, #8600ef);
+}
+
+.artist-header-box{
+    width: 100%;
+    height: 70px;
+    /* background-color: #0400ff;     */
+    margin-top: -50px;
+}
+
+.artist-header{
+    font-family: 'Kare', sans-serif;
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.719);
+}
+
+.artist-grid{
+    width: 100%;
+    height: 570px;
+    /* margin-top: -30px; */
+    /* background-color: salmon; */
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.artist-box{
+    height: 140px;
+    width: 140px;
+    margin: 15px;
+    /* background-color: #1edde8; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.artist-image{
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    
+}
+
+.artist-image img{
+    border-radius: 15px;
+}
+
+.artist-name{
+    width: 140px;
+    height: 40px;
+    background: linear-gradient(to left, #1edde8, #8600ef);
+    border-radius: 15px;
+    top: 140px;
+position: absolute;
+
+}
+
+.artist-name:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.artist-name p{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.719);
+    letter-spacing: 0px;
+}
+
+.early-bird-page{
+    width: 100%;
+    min-height: 750px;
+    padding-top: 0px;
+    background: url(/img/background-dj.png);
+    background-position: 63% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.early-bird-page::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to left, #1edde8, #8600ef);
+}
+
+.early-header-box{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    /* background-color: #0400ff;  */
+}
+
+.early-header{
+    font-family: 'Kare', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.719);
+    text-align: center;
+line-height: 0.9;
+}
+
+.reserve{
+    width: 100%;
+    height: 180px;
+    /* background-color: aquamarine; */
+}
+
+.reserve-box{
+    width: 80%;
+    height: 180px;
+    position: relative;
+}
+
+.reserve-box img{
+    border-radius: 15px;
+}
+
+.reserve-button{
+    width: 290px;
+    height: 35px;
+    margin-top: -100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    position: absolute;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.reserve-button:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.reserve-button p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;;
+}
+
+.genres-text-box{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    /* background-color: rgb(127, 208, 255); */
+}
+
+.genres-text p{
+    font-family: 'Kare', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.719);
+    letter-spacing: 5px;
+}
+
+.music-genre{
+    width: 100%;
+    height: 300px;
+    margin-top: 0px;
+    flex-wrap: wrap;
+    /* background-color: rgb(131, 255, 127); */
+}
+
+.music-genre-box{
+    width: 140px;
+    height: 100px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    /* background-color: rgb(255, 127, 223); */
+}
+
+.music-genre-box:hover{
+    transform: scale(1.1);
+}
+
+.music-genre-box img{
+    border-radius: 15px;
+    object-fit:cover;
+    overflow: hidden;
+}
+
+.genre-name{
+    width: 150px;
+    height: 20px;
+    margin-top: 10px;
+    /* background-color: aquamarine; */
+}
+
+.genre-name p{
+    font-family:'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+    margin-top: -10px;
+    /* margin: 20px; */
+    /* position: absolute; */
+}
+
+.footer{
+width: 100%;
+    min-height: 750px;
+    padding-top: 0px;
+    background-color: #272624;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.footer::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to left, #1edde8, #8600ef);
+}
+
+.contact-box{
+    height: 80px;
+    width: 100%;
+    /* background-color: #61c2c8; */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-box .contact{
+    font-family: "Kare", sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.contact-box .for-support{
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+.get-in-touch-box{
+    height: 250px;
+    width: 100%;
+    /* background-color: #61c2c8; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.support-img img{
+    height: 176px;
+    width: 176px;
+    object-fit: fill;
+}
+
+.get-in-touch{
+    height: 30px;
+    width: 100%;
+    /* background-color: #caff9f; */
+    margin-top: 20px;
+}
+
+.get-in-touch-button{
+    height: 30px;
+    width: 250px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 15px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.get-in-touch-button:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.follow-box{
+    height: 315px;
+    width: 100%;
+    /* background-color: salmon; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.follow-text-box{
+    width: 100%;
+    height: 100px;
+    /* background-color: #8600ef; */
+}
+
+.follow-text .follow{
+    font-family: "Kare", sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.follow-text .us-on{
+    font-family: "Kare", sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    margin-top: -20px;
+    letter-spacing: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media-box{
+    width: 100%;
+    height: 50px;
+    /* background-color: #3c70ff; */
+    margin-top: 50px;
+}
+.social-media-icons i{
+    font-size: 50px;
+    color: white;
+    letter-spacing: 15px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.social-media-icons i:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.footer-end-box{
+    width: 100%;
+    height: 30px;
+    /* background-color: #603cff; */
+    margin-top: 50px;
+}
+
+.footer-end-box p{
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-size: 19px;
+    margin: 15px;
+}
+
+.footer-end-box p:hover{
+    cursor: pointer;
+}
